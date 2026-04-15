@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eishaan Khatri — AI Researcher, NLP Engineer, Data Scientist</title>
+  <meta name="description" content="Portfolio of Eishaan Khatri — 1st Rank in Mathematics & Computing at RGIPT. Published researcher in Elsevier (Expert Systems with Applications). Building multi-agent AI systems, NLP pipelines, and computer vision solutions.">
+  <meta name="keywords" content="Eishaan Khatri, AI Researcher, NLP, Machine Learning, Portfolio, Data Scientist, RGIPT, Elsevier, Multi-Agent AI">
+  <meta name="author" content="Eishaan Khatri">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Eishaan Khatri — AI Researcher & Engineer">
+  <meta property="og:description" content="Published in Elsevier. #1 in Mathematics. Building AI that matters.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://eishaan-khatri.github.io/">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Eishaan Khatri — AI Researcher & Engineer">
+  <meta name="twitter:description" content="Published in Elsevier. #1 in Mathematics. Building AI that matters.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="theme-color" content="#050810">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LOADING SCREEN (#7)                        -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="loader" id="loader">
+    <div class="loader__ring">
+      <span class="loader__monogram">EK</span>
+    </div>
+    <p class="loader__text">Loading portfolio...</p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- NAVIGATION                                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <nav class="side-nav" id="sideNav">
+    <a href="#hero" class="nav-dot active" data-section="hero" data-label="Home" aria-label="Home"></a>
+    <a href="#about" class="nav-dot" data-section="about" data-label="About" aria-label="About"></a>
+    <a href="#experience" class="nav-dot" data-section="experience" data-label="Experience" aria-label="Experience"></a>
+    <a href="#education" class="nav-dot" data-section="education" data-label="Education" aria-label="Education"></a>
+    <a href="#publications" class="nav-dot" data-section="publications" data-label="Publications" aria-label="Publications"></a>
+    <a href="#projects" class="nav-dot" data-section="projects" data-label="Projects" aria-label="Projects"></a>
+    <a href="#skills" class="nav-dot" data-section="skills" data-label="Skills" aria-label="Skills"></a>
+    <a href="#achievements" class="nav-dot" data-section="achievements" data-label="Achievements" aria-label="Achievements"></a>
+    <a href="#github" class="nav-dot" data-section="github" data-label="GitHub" aria-label="GitHub"></a>
+    <a href="#contact" class="nav-dot" data-section="contact" data-label="Contact" aria-label="Contact"></a>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <header class="mobile-header" id="mobileHeader">
+    <span class="mobile-logo">EK</span>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#publications" class="mobile-link">Publications</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#achievements" class="mobile-link">Achievements</a>
+    <a href="#github" class="mobile-link">GitHub</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 1: HERO — COSMOS THEME             -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="hero" class="section section--hero" data-theme="cosmos">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero__content">
+      <div class="hero__avatar">
+        <div class="avatar-ring">
+          <span class="avatar-monogram">EK</span>
+        </div>
+      </div>
+      <h1 class="hero__name" id="heroName">
+        <span class="name-line">EISHAAN</span>
+        <span class="name-line name-line--accent">KHATRI</span>
+      </h1>
+      <p class="hero__subtitle" id="heroSubtitle"></p>
+      <div class="hero__badges">
+        <span class="hero-badge">🏅 1st Rank, Math Dept.</span>
+        <span class="hero-badge">📄 2 Publications</span>
+        <span class="hero-badge">🎓 B.Tech Math & Computing</span>
+      </div>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary"><span>View My Work</span></a>
+        <a href="Eishaan_Khatri_Resume.pdf" target="_blank" rel="noopener" class="btn btn--resume"><span>📄 Download CV</span></a>
+        <a href="#contact" class="btn btn--ghost"><span>Get In Touch</span></a>
+      </div>
+    </div>
+    <div class="scroll-indicator" id="scrollIndicator">
+      <span class="scroll-text">Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 2: ABOUT — NEURAL THEME            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="about" class="section section--about" data-theme="neural">
+    <div class="section__bg-pattern neural-grid"></div>
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">
+        <span class="section-number">01</span>
+        About Me
+      </h2>
+      <div class="about__layout">
+        <div class="about__text" data-animate="fade-right">
+          <p class="about__intro">
+            I grew up fascinated by two things — <strong>mathematics and language</strong>. I wanted to understand why equations could predict physical reality and why the same sentence in Hindi and English carried different emotional weight. That curiosity led me to <strong>Mathematics & Computing at RGIPT</strong>, where I discovered that AI sits exactly at that intersection.
+          </p>
+          <p>
+            Today, my work spans the full spectrum of AI — from <em>multilingual NLP and code-mixed language understanding</em> to <em>multi-agent AI systems, computer vision, and explainable AI for ethical decision-making</em>. I've published in top-tier venues (Elsevier, CASML), built production chatbots serving thousands of users, and developed industrial anomaly detection systems.
+          </p>
+          <p>
+            What drives me is the intersection of <strong>rigorous mathematics</strong> and <strong>real-world impact</strong> — whether that's reducing LLM hallucinations by 68%, detecting cement plant anomalies from 378K sensor readings, or democratizing AI access for researchers with limited compute.
+          </p>
+          <p class="about__highlight">
+            Currently ranked <strong>#1 in Mathematics</strong> at my university, with a Minor in Business Consulting that gives me a unique lens on translating technical depth into stakeholder value.
+          </p>
+        </div>
+        <div class="about__stats" data-animate="fade-left">
+          <div class="stat-card">
+            <span class="stat-number" data-count="74">0</span>
+            <span class="stat-label">GitHub Repos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Publications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="3000" data-suffix="+">0</span>
+            <span class="stat-label">Users Impacted</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="11" data-suffix="+">0</span>
+            <span class="stat-label">Languages</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="68" data-suffix="%">0</span>
+            <span class="stat-label">Hallucination Reduction</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="1" data-suffix="st">0</span>
+            <span class="stat-label">Dept. Rank</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 3: EXPERIENCE — CYBERPUNK THEME     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="experience" class="section section--experience" data-theme="cyberpunk">
+    <div class="section__bg-pattern cyber-lines"></div>
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">
+        <span class="section-number">02</span>
+        Experience
+      </h2>
+      <div class="timeline">
+        <!-- IIM Shillong -->
+        <div class="timeline__item" data-animate="fade-right">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Research Analyst Intern</h3>
+                <p class="timeline__company">Indian Institute of Management Shillong</p>
+                <p class="timeline__mentor">Mentor: Dr. Shrawan Kumar Trivedi</p>
+              </div>
+              <span class="timeline__date">May 2025 — Present</span>
+            </div>
+            <ul class="timeline__details">
+              <li>Researched <strong>Explainable AI techniques</strong> (LIME, SHAP, attention mechanisms) to detect bias in financial decision systems</li>
+              <li>Improved model accuracy by <strong>15%</strong> through XAI-driven interpretability assessments</li>
+              <li>Found chunked visualizations with progressive disclosure increased decision confidence by <strong>23%</strong></li>
+              <li>Created <strong>Tableau dashboards</strong> translating model explanations into stakeholder insights</li>
+              <li>Co-authoring research paper on explainable AI for financial modeling</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">XAI</span>
+              <span class="tag">LIME/SHAP</span>
+              <span class="tag">Python</span>
+              <span class="tag">R</span>
+              <span class="tag">Tableau</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polka Labs -->
+        <div class="timeline__item" data-animate="fade-left">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">AI Developer Intern</h3>
+                <p class="timeline__company">Polka Labs Pte. Ltd. (Polkassembly) — Singapore</p>
+              </div>
+              <span class="timeline__date">May — Nov 2025</span>
+            </div>
+            <ul class="timeline__details">
+              <li>Built <strong>multilingual chatbot platform</strong> supporting Discord, Slack, and Telegram with <strong>3,000+ active users</strong></li>
+              <li>Designed <strong>multi-agent pipeline</strong> with specialized agents for task decomposition and quality assurance</li>
+              <li>Implemented <strong>hub-and-spoke architecture</strong> reducing platform integration time from 1 week to <strong>under 5 hours</strong></li>
+              <li>Developed conversation engine with <strong>persistent memory (Mem0)</strong> across GPT-4, Claude, and Gemini</li>
+              <li>Created prompt engineering guide adopted by 8-person product team</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">Multi-Agent AI</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">Python</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Blockchain</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sambin (#10) -->
+        <div class="timeline__item" data-animate="fade-right">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Data Science Intern</h3>
+                <p class="timeline__company">Sambin</p>
+              </div>
+              <span class="timeline__date">2024</span>
+            </div>
+            <ul class="timeline__details">
+              <li>Performed data analysis and built predictive models for business intelligence use cases</li>
+              <li>Developed data pipelines and visualization dashboards for stakeholder reporting</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Data Science</span>
+              <span class="tag">Analytics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lizmotors (#10) -->
+        <div class="timeline__item" data-animate="fade-left">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">AI/ML Intern</h3>
+                <p class="timeline__company">Lizmotors Mobility</p>
+              </div>
+              <span class="timeline__date">2024</span>
+            </div>
+            <ul class="timeline__details">
+              <li>Worked on AI/ML solutions for electric vehicle mobility and optimization</li>
+              <li>Applied machine learning techniques to real-world automotive data</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">Python</span>
+              <span class="tag">ML</span>
+              <span class="tag">EV/Mobility</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AspireNex (#10) -->
+        <div class="timeline__item" data-animate="fade-right">
+          <div class="timeline__marker"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">AI/ML Intern</h3>
+                <p class="timeline__company">AspireNex</p>
+              </div>
+              <span class="timeline__date">2024</span>
+            </div>
+            <ul class="timeline__details">
+              <li>Completed structured AI/ML projects covering classification, NLP, and deep learning</li>
+              <li>Built end-to-end ML pipelines from data preprocessing to model deployment</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">Python</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">NLP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 3.5: EDUCATION — PRISM THEME (#5)  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="education" class="section section--education" data-theme="prism">
+    <div class="section__bg-pattern prism-bg"></div>
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">
+        <span class="section-number">03</span>
+        Education
+      </h2>
+      <div class="education__grid">
+        <!-- RGIPT -->
+        <div class="edu-card edu-card--primary" data-animate="fade-up">
+          <div class="edu-card__badge">🎓 Current</div>
+          <div class="edu-card__header">
+            <h3 class="edu-card__degree">B.Tech in Mathematics & Computing</h3>
+            <p class="edu-card__school">Rajiv Gandhi Institute of Petroleum Technology (RGIPT), Amethi</p>
+            <p class="edu-card__period">2022 — 2026</p>
+          </div>
+          <div class="edu-card__stats">
+            <div class="edu-stat">
+              <span class="edu-stat__value">8.60+</span>
+              <span class="edu-stat__label">CPI</span>
+            </div>
+            <div class="edu-stat">
+              <span class="edu-stat__value">#1</span>
+              <span class="edu-stat__label">Department Rank</span>
+            </div>
+          </div>
+          <div class="edu-card__details">
+            <p><strong>Minor:</strong> Business Consulting</p>
+            <p><strong>Key Courses:</strong> Machine Learning, Deep Learning, Linear Algebra, Probability & Statistics, Optimization, Data Structures & Algorithms, Operating Systems, DBMS</p>
+            <p><strong>Leadership:</strong> OWASP Management Head — led AI security & blockchain initiatives, guided 500+ freshmen</p>
+          </div>
+        </div>
+
+        <!-- School -->
+        <div class="edu-card" data-animate="fade-up">
+          <div class="edu-card__header">
+            <h3 class="edu-card__degree">Higher Secondary (Class 12)</h3>
+            <p class="edu-card__school">Delhi Public School, Hapur</p>
+            <p class="edu-card__period">2020 — 2022</p>
+          </div>
+          <div class="edu-card__stats">
+            <div class="edu-stat">
+              <span class="edu-stat__value">JEE Adv.</span>
+              <span class="edu-stat__label">Top 1.5%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card" data-animate="fade-up">
+          <div class="edu-card__header">
+            <h3 class="edu-card__degree">Secondary (Class 10)</h3>
+            <p class="edu-card__school">Delhi Public School, Hapur</p>
+            <p class="edu-card__period">2020</p>
+          </div>
+          <div class="edu-card__stats">
+            <div class="edu-stat">
+              <span class="edu-stat__value">96.80%</span>
+              <span class="edu-stat__label">CBSE Score</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 4: PUBLICATIONS — LIBRARY THEME     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="publications" class="section section--publications" data-theme="library">
+    <div class="section__bg-pattern paper-texture"></div>
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">
+        <span class="section-number">04</span>
+        Publications
+      </h2>
+      <div class="publications__grid">
+        <!-- Paper 1 -->
+        <article class="pub-card" data-animate="fade-up">
+          <div class="pub-card__badge">Elsevier — Top-Tier Journal</div>
+          <h3 class="pub-card__title">Target Based Offensive Language Detection in Hinglish</h3>
+          <p class="pub-card__venue">Expert Systems with Applications, Volume 308, May 2026</p>
+          <p class="pub-card__authors">Eishaan Khatri • Dr. Santosh K. Mishra</p>
+          <ul class="pub-card__highlights">
+            <li>Constructed and released a <strong>6,800-instance Hinglish offensive language dataset</strong></li>
+            <li>Proposed <strong>novel token-level annotation framework</strong> for code-mixed languages</li>
+            <li>Achieved high accuracy across pre-trained multilingual models (mBERT, XLM-R, MuRIL)</li>
+            <li>Addresses data scarcity in low-resource, code-mixed language processing</li>
+          </ul>
+          <div class="pub-card__tags">
+            <span class="tag">NLP</span>
+            <span class="tag">Hinglish</span>
+            <span class="tag">mBERT</span>
+            <span class="tag">XLM-R</span>
+            <span class="tag">Low-Resource</span>
+          </div>
+        </article>
+
+        <!-- Paper 2 -->
+        <article class="pub-card" data-animate="fade-up">
+          <div class="pub-card__badge">Conference — Poster Presentation</div>
+          <h3 class="pub-card__title">Bridging the Gap: Enhancing and Evaluating Zero-Cost LLMs for Scientific Question Answering</h3>
+          <p class="pub-card__venue">2nd Conference on Applied AI and Scientific ML (CASML 2025)</p>
+          <p class="pub-card__authors">Eishaan Khatri</p>
+          <ul class="pub-card__highlights">
+            <li>Engineered neuro-symbolic pipeline integrating <strong>Dense Retrieval and Knowledge Graph Grounding</strong></li>
+            <li>Achieved <strong>68% reduction in hallucinations</strong> for Physics/Materials Science tasks</li>
+            <li>Introduced novel <strong>fairness-oriented validation metrics (FC-PS)</strong></li>
+            <li>Democratizes AI access by optimizing free-tier LLMs for researchers with limited compute</li>
+          </ul>
+          <div class="pub-card__tags">
+            <span class="tag">LLMs</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Knowledge Graphs</span>
+            <span class="tag">Scientific QA</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 5: PROJECTS — LAB THEME            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="projects" class="section section--projects" data-theme="lab">
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">
+        <span class="section-number">05</span>
+        Projects
+      </h2>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" data-animate="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ai-agents">AI & Agents</button>
+        <button class="filter-btn" data-filter="nlp">NLP</button>
+        <button class="filter-btn" data-filter="analytics">Analytics</button>
+        <button class="filter-btn" data-filter="cv">Computer Vision</button>
+        <button class="filter-btn" data-filter="finance">Finance</button>
+        <button class="filter-btn" data-filter="social">Social Impact</button>
+        <button class="filter-btn" data-filter="research">Research</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects__grid" id="projectsGrid">
+
+        <!-- 1. OpenEnv -->
+        <article class="project-card" data-category="ai-agents" data-animate="zoom-in">
+          <div class="project-card__icon">🧪</div>
+          <div class="project-card__status status--flagship">★ Flagship</div>
+          <h3 class="project-card__title">OpenEnv — SQL Migration Agent Benchmark</h3>
+          <p class="project-card__desc">Production-grade adversarial evaluation suite for Database Engineering AI Agents. Dynamic golden-database grading, live Mermaid ERDs, and 8 extreme SQLite migration tasks.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">AI Agents</span>
+            <span class="tag">RL</span>
+            <span class="tag">SQLite</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/sql-migration-env" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 2. AI Dispatcher -->
+        <article class="project-card" data-category="ai-agents" data-animate="zoom-in">
+          <div class="project-card__icon">🚀</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">AI-Dispatcher</h3>
+          <p class="project-card__desc">Intelligent AI dispatch system for optimizing task allocation and resource management using multi-agent coordination.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">AI</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/AI-Dispatcher" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 3. IRMDS -->
+        <article class="project-card" data-category="cv" data-animate="zoom-in">
+          <div class="project-card__icon">👁️</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">IRMDS — Real-Time Monitoring & Detection</h3>
+          <p class="project-card__desc">Real-time anomaly detection system using computer vision and edge computing with YOLOv8 for intelligent monitoring on edge devices.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">YOLOv8</span>
+            <span class="tag">Edge AI</span>
+            <span class="tag">Computer Vision</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/IRMDS" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 4. Hinglish TTS -->
+        <article class="project-card" data-category="nlp" data-animate="zoom-in">
+          <div class="project-card__icon">🗣️</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Hinglish Text-to-Speech</h3>
+          <p class="project-card__desc">Code-mixed Hinglish text-to-speech synthesis system, addressing the challenge of bilingual TTS for India's most common conversational language pattern.</p>
+          <div class="project-card__tags">
+            <span class="tag">NLP</span>
+            <span class="tag">Speech Synthesis</span>
+            <span class="tag">Hinglish</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/hinglish-tts" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 5. Multi-Agent Subsurface -->
+        <article class="project-card" data-category="ai-agents" data-animate="zoom-in">
+          <div class="project-card__icon">⛏️</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Multi-Agent Subsurface Decision Support</h3>
+          <p class="project-card__desc">4 specialized agents (Petrophysical, Seismic, Risk/ESG) with auditable JSON artifacts for 100% reproducibility. RAG-based chat interface that cites sources.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">Multi-Agent</span>
+            <span class="tag">RAG</span>
+          </div>
+          <a href="https://github.com/EishaanKhatri/drilling_mvp" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 6. Pharma Analytics -->
+        <article class="project-card" data-category="analytics" data-animate="zoom-in">
+          <div class="project-card__icon">💊</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Pharma Commercial Analytics</h3>
+          <p class="project-card__desc">Forecasting, segmentation & A/B testing on 600K+ pharma transactions across 57 drug categories. Linear/ridge regression, K-means clustering, Tableau/Power BI dashboards.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">R</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Tableau</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/Pharma-Commercial-Analytics" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 7. Reliance Stock Forecasting -->
+        <article class="project-card" data-category="finance" data-animate="zoom-in">
+          <div class="project-card__icon">📈</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Reliance Stock Price Forecasting</h3>
+          <p class="project-card__desc">Gradient boosting regression on NIFTY 50 data achieving R² = 0.9998 and MAE = 3.48. 10+ engineered features including SMAs, RSI, log-returns, rolling volatility.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">R</span>
+            <span class="tag">Finance</span>
+            <span class="tag">ML</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/Reliance-Stock-Forecasting" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 8. Cyclone Preheater -->
+        <article class="project-card" data-category="analytics" data-animate="zoom-in">
+          <div class="project-card__icon">🏭</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Cyclone Preheater Anomaly Detection</h3>
+          <p class="project-card__desc">Industrial sensor analytics on 378K+ rows. 28 domain-informed features, Isolation Forest with temporal smoothing, Z-score root-cause analysis. Power BI dashboards.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">Anomaly Detection</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/Cyclone-Preheater-Anomaly-Detection-System" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 9. Flood Risk -->
+        <article class="project-card" data-category="social" data-animate="zoom-in">
+          <div class="project-card__icon">🌊</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">AI-Powered Urban Flood Risk Prediction</h3>
+          <p class="project-card__desc">Real-time flood prediction with 90% accuracy using geospatial data. Interactive flood maps, evacuation routes, and chatbot serving 40,000+ users.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">ML</span>
+            <span class="tag">NLP</span>
+            <span class="tag">GIS</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/AI-Powered-Urban-Flood-Risk-Prediction-Platform" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 10. Real-Time Transcription -->
+        <article class="project-card" data-category="nlp" data-animate="zoom-in">
+          <div class="project-card__icon">🎙️</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Real-Time Multi-Speaker Transcription</h3>
+          <p class="project-card__desc">85% speaker identification with Siamese networks + SVM. BERT-based embeddings achieving 90% transcription accuracy. Context-aware NLP for speaker turn detection.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">NLP</span>
+            <span class="tag">Speech</span>
+            <span class="tag">BERT</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 11. Text Summarization -->
+        <article class="project-card" data-category="nlp" data-animate="zoom-in">
+          <div class="project-card__icon">📝</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Text Summarization with Transformers</h3>
+          <p class="project-card__desc">ROUGE-L = 0.7. Summarizes 5 million words in under 20 seconds per document using dynamic batching and HuggingFace Transformers.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">Transformers</span>
+            <span class="tag">NLP</span>
+          </div>
+          <a href="https://github.com/EishaanKhatri/Text_Summarization" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 12. Personalized Recommendation -->
+        <article class="project-card" data-category="ai-agents" data-animate="zoom-in">
+          <div class="project-card__icon">🎯</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Personalized Recommendation System</h3>
+          <p class="project-card__desc">Boosted conversion rates by 20% and retention by 30%. Collaborative + Content-based Filtering with TensorFlow, handling 1M+ user interactions.</p>
+          <div class="project-card__tags">
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Python</span>
+            <span class="tag">RecSys</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/Personalized-Recommendation-System" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 13. Deep RL Game Agents -->
+        <article class="project-card" data-category="research" data-animate="zoom-in">
+          <div class="project-card__icon">🎮</div>
+          <div class="project-card__status status--progress">In Progress</div>
+          <h3 class="project-card__title">Deep RL Game Agents</h3>
+          <p class="project-card__desc">DQN + Actor-Critic from scratch. 87% win rate CartPole, 65% LunarLander across 50K episodes. Prioritized experience replay, adaptive learning rate scheduling.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">RL</span>
+            <span class="tag">DQN</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/RL_Project_Games" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 14. Neural PRNG -->
+        <article class="project-card" data-category="research" data-animate="zoom-in">
+          <div class="project-card__icon">🔬</div>
+          <div class="project-card__status status--progress">In Progress</div>
+          <h3 class="project-card__title">Neural Pseudo-Random Number Generation</h3>
+          <p class="project-card__desc">Hybrid Transformer-LSTM + RL for PRNG. Evaluated against NIST statistical test suites on 100M generated bits. Reward function based on entropy and unpredictability.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span>
+            <span class="tag">RL</span>
+            <span class="tag">Transformers</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/prng_ISRO" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 15. Algolia MCP -->
+        <article class="project-card" data-category="finance" data-animate="zoom-in">
+          <div class="project-card__icon">💰</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Algolia MCP Financial Analyst</h3>
+          <p class="project-card__desc">Financial analysis tool built for the Algolia MCP Challenge, leveraging AI for automated financial insights and recommendations.</p>
+          <div class="project-card__tags">
+            <span class="tag">Jupyter</span>
+            <span class="tag">Finance</span>
+            <span class="tag">AI</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/Algolia_MCP_Challenge_Financial_Analyst" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 16. Global Trade -->
+        <article class="project-card" data-category="analytics" data-animate="zoom-in">
+          <div class="project-card__icon">🌍</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Global Trade Network Visualization</h3>
+          <p class="project-card__desc">Interactive visualization of global trade networks, revealing patterns and dependencies in international commerce through data-driven graphics.</p>
+          <div class="project-card__tags">
+            <span class="tag">Jupyter</span>
+            <span class="tag">Data Viz</span>
+            <span class="tag">Networks</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/Visualization-Global-Trade-Networks" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+        <!-- 17. Uncertainty Study -->
+        <article class="project-card" data-category="research" data-animate="zoom-in">
+          <div class="project-card__icon">📊</div>
+          <div class="project-card__status status--complete">Completed</div>
+          <h3 class="project-card__title">Uncertainty & Robustness Study</h3>
+          <p class="project-card__desc">Robustness study on physiological signals using uncertainty quantification and physics constraints. Explores neural network reliability in safety-critical domains.</p>
+          <div class="project-card__tags">
+            <span class="tag">Jupyter</span>
+            <span class="tag">Uncertainty</span>
+            <span class="tag">Physics-Informed</span>
+          </div>
+          <a href="https://github.com/Eishaan-Khatri/Uncertainty_Study" target="_blank" rel="noopener" class="project-card__link">View on GitHub →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 6: SKILLS — FLUID THEME            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="skills" class="section section--skills" data-theme="fluid">
+    <div class="section__bg-pattern wave-bg"></div>
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">
+        <span class="section-number">06</span>
+        Skills & Technologies
+      </h2>
+      <div class="skills__grid">
+
+        <div class="skill-group" data-animate="fade-up">
+          <h3 class="skill-group__title">
+            <span class="skill-icon">💻</span>
+            Programming Languages
+          </h3>
+          <div class="skill-bubbles">
+            <span class="skill-bubble skill-bubble--expert">Python</span>
+            <span class="skill-bubble skill-bubble--expert">R</span>
+            <span class="skill-bubble skill-bubble--advanced">C++</span>
+            <span class="skill-bubble skill-bubble--advanced">JavaScript</span>
+            <span class="skill-bubble skill-bubble--advanced">SQL</span>
+            <span class="skill-bubble skill-bubble--intermediate">Rust</span>
+            <span class="skill-bubble skill-bubble--intermediate">Java</span>
+            <span class="skill-bubble skill-bubble--intermediate">C</span>
+            <span class="skill-bubble skill-bubble--intermediate">Solidity</span>
+            <span class="skill-bubble skill-bubble--beginner">NoSQL</span>
+            <span class="skill-bubble skill-bubble--beginner">Assembly</span>
+          </div>
+        </div>
+
+        <div class="skill-group" data-animate="fade-up">
+          <h3 class="skill-group__title">
+            <span class="skill-icon">🧠</span>
+            ML / AI Frameworks
+          </h3>
+          <div class="skill-bubbles">
+            <span class="skill-bubble skill-bubble--expert">PyTorch</span>
+            <span class="skill-bubble skill-bubble--expert">TensorFlow</span>
+            <span class="skill-bubble skill-bubble--expert">HuggingFace</span>
+            <span class="skill-bubble skill-bubble--expert">Scikit-learn</span>
+            <span class="skill-bubble skill-bubble--advanced">Keras</span>
+            <span class="skill-bubble skill-bubble--advanced">spaCy</span>
+            <span class="skill-bubble skill-bubble--advanced">NLTK</span>
+            <span class="skill-bubble skill-bubble--intermediate">fastText</span>
+            <span class="skill-bubble skill-bubble--intermediate">Theano</span>
+          </div>
+        </div>
+
+        <div class="skill-group" data-animate="fade-up">
+          <h3 class="skill-group__title">
+            <span class="skill-icon">📊</span>
+            Data & Visualization
+          </h3>
+          <div class="skill-bubbles">
+            <span class="skill-bubble skill-bubble--expert">Tableau</span>
+            <span class="skill-bubble skill-bubble--expert">Power BI</span>
+            <span class="skill-bubble skill-bubble--advanced">Matplotlib</span>
+            <span class="skill-bubble skill-bubble--advanced">Seaborn</span>
+            <span class="skill-bubble skill-bubble--advanced">Snowflake</span>
+            <span class="skill-bubble skill-bubble--intermediate">Apache Spark</span>
+          </div>
+        </div>
+
+        <div class="skill-group" data-animate="fade-up">
+          <h3 class="skill-group__title">
+            <span class="skill-icon">🔧</span>
+            Tools & Platforms
+          </h3>
+          <div class="skill-bubbles">
+            <span class="skill-bubble skill-bubble--expert">Git</span>
+            <span class="skill-bubble skill-bubble--advanced">Docker</span>
+            <span class="skill-bubble skill-bubble--advanced">AWS</span>
+            <span class="skill-bubble skill-bubble--intermediate">CircleCI</span>
+            <span class="skill-bubble skill-bubble--intermediate">Ethereum</span>
+          </div>
+        </div>
+
+        <div class="skill-group" data-animate="fade-up">
+          <h3 class="skill-group__title">
+            <span class="skill-icon">🎯</span>
+            Core Domains
+          </h3>
+          <div class="skill-bubbles">
+            <span class="skill-bubble skill-bubble--expert">NLP</span>
+            <span class="skill-bubble skill-bubble--expert">Data Analytics</span>
+            <span class="skill-bubble skill-bubble--advanced">Computer Vision</span>
+            <span class="skill-bubble skill-bubble--advanced">Reinforcement Learning</span>
+            <span class="skill-bubble skill-bubble--advanced">Explainable AI</span>
+            <span class="skill-bubble skill-bubble--intermediate">Financial Modeling</span>
+            <span class="skill-bubble skill-bubble--intermediate">Behavioral Science</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="skills__legend" data-animate="fade-up">
+        <span class="legend-item"><span class="legend-dot legend-dot--expert"></span> Expert</span>
+        <span class="legend-item"><span class="legend-dot legend-dot--advanced"></span> Advanced</span>
+        <span class="legend-item"><span class="legend-dot legend-dot--intermediate"></span> Intermediate</span>
+        <span class="legend-item"><span class="legend-dot legend-dot--beginner"></span> Familiar</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 7: ACHIEVEMENTS — TROPHY THEME      -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="achievements" class="section section--achievements" data-theme="trophy">
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">
+        <span class="section-number">07</span>
+        Achievements
+      </h2>
+      <div class="achievements__grid">
+        <div class="trophy-card" data-animate="fade-up">
+          <div class="trophy-card__icon">🥇</div>
+          <h3 class="trophy-card__title">1st Rank</h3>
+          <p class="trophy-card__desc">Mathematics Department, RGIPT Amethi — CPI: 8.60+</p>
+        </div>
+        <div class="trophy-card" data-animate="fade-up">
+          <div class="trophy-card__icon">📄</div>
+          <h3 class="trophy-card__title">Published Researcher</h3>
+          <p class="trophy-card__desc">Top-tier Elsevier journal (Expert Systems with Applications) + CASML 2025 Conference</p>
+        </div>
+        <div class="trophy-card" data-animate="fade-up">
+          <div class="trophy-card__icon">🏆</div>
+          <h3 class="trophy-card__title">National Policy Hackathon Finalist</h3>
+          <p class="trophy-card__desc">IIM Calcutta & IIFT Kolkata — National-level competition, 2024</p>
+        </div>
+        <div class="trophy-card" data-animate="fade-up">
+          <div class="trophy-card__icon">🌊</div>
+          <h3 class="trophy-card__title">FloodAI Hackathon Finalist</h3>
+          <p class="trophy-card__desc">IIEC IIT Gandhinagar — Built AI platform serving 40,000+ users</p>
+        </div>
+        <div class="trophy-card" data-animate="fade-up">
+          <div class="trophy-card__icon">⭐</div>
+          <h3 class="trophy-card__title">3-Star Coder</h3>
+          <p class="trophy-card__desc">Multiple competitive programming platforms in Python & C</p>
+        </div>
+        <div class="trophy-card" data-animate="fade-up">
+          <div class="trophy-card__icon">🎯</div>
+          <h3 class="trophy-card__title">JEE Advanced 2022</h3>
+          <p class="trophy-card__desc">Top 1.5 percentile — AIR ~18,247 among 1.2 million candidates</p>
+        </div>
+        <div class="trophy-card" data-animate="fade-up">
+          <div class="trophy-card__icon">📚</div>
+          <h3 class="trophy-card__title">Class 10 — 96.80%</h3>
+          <p class="trophy-card__desc">Delhi Public School, Hapur — Outstanding academic record</p>
+        </div>
+        <div class="trophy-card" data-animate="fade-up">
+          <div class="trophy-card__icon">🤝</div>
+          <h3 class="trophy-card__title">OWASP Management Head</h3>
+          <p class="trophy-card__desc">Led AI security & blockchain initiatives, guided 500+ freshmen at RGIPT</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 8: GITHUB — GARDEN THEME            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="github" class="section section--github" data-theme="garden">
+    <div class="section__bg-pattern garden-bg"></div>
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">
+        <span class="section-number">08</span>
+        GitHub & Open Source
+      </h2>
+      <div class="github__layout">
+        <div class="github__profiles" data-animate="fade-up">
+          <a href="https://github.com/Eishaan-Khatri/" target="_blank" rel="noopener" class="github-profile-card">
+            <div class="github-profile__avatar">EK</div>
+            <div class="github-profile__info">
+              <h3>Eishaan-Khatri</h3>
+              <p>Primary — 65 repositories</p>
+              <span class="github-profile__stat">4 followers · 37 stars</span>
+            </div>
+            <span class="github-profile__arrow">→</span>
+          </a>
+          <a href="https://github.com/EishaanKhatri" target="_blank" rel="noopener" class="github-profile-card">
+            <div class="github-profile__avatar">EK</div>
+            <div class="github-profile__info">
+              <h3>EishaanKhatri</h3>
+              <p>Secondary — 9 repositories</p>
+              <span class="github-profile__stat">Older projects & web work</span>
+            </div>
+            <span class="github-profile__arrow">→</span>
+          </a>
+        </div>
+
+        <!-- GitHub Contribution Heatmap (#8) -->
+        <div class="github__heatmap-section" data-animate="fade-up">
+          <h3 class="learning-title">📊 Contribution Activity</h3>
+          <div class="github-heatmap" id="githubHeatmap">
+            <!-- Generated by JS -->
+          </div>
+          <div class="heatmap-legend">
+            <span class="heatmap-legend__label">Less</span>
+            <span class="heatmap-cell" style="background: rgba(132,204,22,0.05)"></span>
+            <span class="heatmap-cell" style="background: rgba(132,204,22,0.2)"></span>
+            <span class="heatmap-cell" style="background: rgba(132,204,22,0.4)"></span>
+            <span class="heatmap-cell" style="background: rgba(132,204,22,0.7)"></span>
+            <span class="heatmap-cell" style="background: #84cc16"></span>
+            <span class="heatmap-legend__label">More</span>
+          </div>
+        </div>
+
+        <div class="github__learning" data-animate="fade-up">
+          <h3 class="learning-title">📚 Learning Garden</h3>
+          <p class="learning-desc">I actively study and fork repositories from world-class sources to deepen my understanding. These aren't my original work, but they represent my commitment to continuous learning:</p>
+          <div class="learning-tags">
+            <span class="learning-tag">LLMs-from-scratch (Sebastian Raschka)</span>
+            <span class="learning-tag">Transformers (HuggingFace)</span>
+            <span class="learning-tag">AI Agents for Beginners (Microsoft)</span>
+            <span class="learning-tag">CS249r ML Systems (Harvard)</span>
+            <span class="learning-tag">Stanford CS336 Lectures</span>
+            <span class="learning-tag">STORM (Stanford NLP)</span>
+            <span class="learning-tag">LightGBM</span>
+            <span class="learning-tag">Data Engineering Zoomcamp</span>
+            <span class="learning-tag">IITM GenAI (IISc)</span>
+            <span class="learning-tag">CASML Workshop</span>
+            <span class="learning-tag">Competitive Programming Algorithms</span>
+            <span class="learning-tag">Gurobi Modeling Examples</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION 9: CONTACT — CRYSTAL THEME          -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="contact" class="section section--contact" data-theme="crystal">
+    <div class="section__bg-pattern aurora-bg"></div>
+    <div class="container">
+      <h2 class="section-title" data-animate="fade-up">
+        <span class="section-number">09</span>
+        Let's Connect
+      </h2>
+      <p class="contact__intro" data-animate="fade-up">
+        I'm always open to discussing <strong>research collaborations</strong>, <strong>interesting projects</strong>, or <strong>career opportunities</strong> in AI/ML/NLP.
+      </p>
+      <div class="contact__grid" data-animate="fade-up">
+        <a href="mailto:eishaankhatri@gmail.com" class="contact-card">
+          <div class="contact-card__icon">✉️</div>
+          <h3>Email</h3>
+          <p>eishaankhatri@gmail.com</p>
+        </a>
+        <a href="https://www.linkedin.com/in/eishaan-khatri/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card__icon">💼</div>
+          <h3>LinkedIn</h3>
+          <p>in/eishaan-khatri</p>
+        </a>
+        <a href="https://github.com/Eishaan-Khatri/" target="_blank" rel="noopener" class="contact-card">
+          <div class="contact-card__icon">🐙</div>
+          <h3>GitHub</h3>
+          <p>Eishaan-Khatri</p>
+        </a>
+      </div>
+
+      <!-- Resume Download CTA (#1) -->
+      <div class="contact__resume" data-animate="fade-up">
+        <a href="Eishaan_Khatri_Resume.pdf" target="_blank" rel="noopener" class="btn btn--resume btn--lg">
+          <span>📄 Download My Resume</span>
+        </a>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>Designed & Built by <strong>Eishaan Khatri</strong> · 2026</p>
+      <p class="footer__sub">Mathematics & Computing · RGIPT Amethi</p>
+    </footer>
+  </section>
+
+  <!-- Back to Top (#9) -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
