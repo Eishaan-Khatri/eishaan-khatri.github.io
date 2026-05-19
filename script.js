@@ -195,12 +195,12 @@ function initTypingEffect() {
   if (!el) return;
 
   const strings = [
-    'AI Researcher & NLP Engineer',
+    'AI/ML Research Engineer',
+    'Multilingual NLP, robustness evaluation, applied AI systems',
     'Published in Expert Systems with Applications',
     '#1 in Mathematics & Computing, RGIPT',
-    'Building multi-agent AI systems at scale',
-    '68% hallucination reduction in zero-cost LLMs',
-    'From Hinglish NLP to industrial anomaly detection',
+    'Building RAG, agent, and evaluation pipelines',
+    'From Hinglish NLP to CLIP and TTA robustness studies',
   ];
 
   let stringIndex = 0;
@@ -481,14 +481,14 @@ function initBackToTop() {
 }
 
 /* ═══════════════════════════════════════════════════════════════
-   GITHUB HEATMAP — Simulated contribution calendar
+   ACTIVITY MAP — Illustrative portfolio visualization
    ═══════════════════════════════════════════════════════════════ */
 function initGithubHeatmap() {
   const container = document.getElementById('githubHeatmap');
   if (!container) return;
 
-  // Generate 52 weeks × 7 days of contribution data
-  // Weighted to show realistic patterns (more active in recent weeks)
+  // Generate 52 weeks x 7 days of illustrative activity data.
+  // This is decorative and is labeled as non-live data in the page copy.
   const weeks = 52;
   const intensities = [
     'rgba(132,204,22,0.05)',  // 0: empty
@@ -509,7 +509,7 @@ function initGithubHeatmap() {
       const cell = document.createElement('div');
       cell.className = 'heatmap-cell';
 
-      // Simulate realistic contribution pattern
+      // Simulate an illustrative activity pattern.
       const rand = Math.random();
       let level = 0;
 

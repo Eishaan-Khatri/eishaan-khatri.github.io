@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eishaan Khatri — AI Researcher, NLP Engineer, Data Scientist</title>
-  <meta name="description" content="Portfolio of Eishaan Khatri — 1st Rank in Mathematics & Computing at RGIPT. Published researcher in Elsevier (Expert Systems with Applications). Building multi-agent AI systems, NLP pipelines, and computer vision solutions.">
-  <meta name="keywords" content="Eishaan Khatri, AI Researcher, NLP, Machine Learning, Portfolio, Data Scientist, RGIPT, Elsevier, Multi-Agent AI">
+  <title>Eishaan Khatri — AI/ML Research Engineer</title>
+  <meta name="description" content="Portfolio of Eishaan Khatri — Mathematics & Computing at RGIPT. Work across multilingual NLP, robustness evaluation, computer vision, and applied AI systems.">
+  <meta name="keywords" content="Eishaan Khatri, AI ML Research Engineer, NLP, Machine Learning, Robustness, Computer Vision, RGIPT, Elsevier, Multi-Agent AI">
   <meta name="author" content="Eishaan Khatri">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Eishaan Khatri — AI Researcher & Engineer">
-  <meta property="og:description" content="Published in Elsevier. #1 in Mathematics. Building AI that matters.">
+  <meta property="og:title" content="Eishaan Khatri — AI/ML Research Engineer">
+  <meta property="og:description" content="Multilingual NLP, robustness evaluation, and applied AI systems.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eishaan-khatri.github.io/">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Eishaan Khatri — AI Researcher & Engineer">
-  <meta name="twitter:description" content="Published in Elsevier. #1 in Mathematics. Building AI that matters.">
+  <meta name="twitter:title" content="Eishaan Khatri — AI/ML Research Engineer">
+  <meta name="twitter:description" content="Multilingual NLP, robustness evaluation, and applied AI systems.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -100,7 +100,7 @@
       </div>
       <div class="hero__cta">
         <a href="#projects" class="btn btn--primary"><span>View My Work</span></a>
-        <a href="Eishaan_Khatri_Resume.pdf" target="_blank" rel="noopener" class="btn btn--resume"><span>📄 Download CV</span></a>
+        <a href="#resume" class="btn btn--resume"><span>Choose Resume</span></a>
         <a href="#contact" class="btn btn--ghost"><span>Get In Touch</span></a>
       </div>
     </div>
@@ -126,7 +126,7 @@
             I grew up fascinated by two things — <strong>mathematics and language</strong>. I wanted to understand why equations could predict physical reality and why the same sentence in Hindi and English carried different emotional weight. That curiosity led me to <strong>Mathematics & Computing at RGIPT</strong>, where I discovered that AI sits exactly at that intersection.
           </p>
           <p>
-            Today, my work spans the full spectrum of AI — from <em>multilingual NLP and code-mixed language understanding</em> to <em>multi-agent AI systems, computer vision, and explainable AI for ethical decision-making</em>. I've published in top-tier venues (Elsevier, CASML), built production chatbots serving thousands of users, and developed industrial anomaly detection systems.
+            Today, my work clusters around <em>multilingual NLP for code-mixed text</em>, <em>robustness evaluation for vision and VLMs</em>, and <em>applied AI systems such as agents and RAG pipelines</em>. I try to keep the work evidence-backed through datasets, baselines, ablations, error analysis, and reproducible artifacts.
           </p>
           <p>
             What drives me is the intersection of <strong>rigorous mathematics</strong> and <strong>real-world impact</strong> — whether that's reducing LLM hallucinations by 68%, detecting cement plant anomalies from 378K sensor readings, or democratizing AI access for researchers with limited compute.
@@ -386,13 +386,13 @@
       <div class="publications__grid">
         <!-- Paper 1 -->
         <article class="pub-card" data-animate="fade-up">
-          <div class="pub-card__badge">Elsevier — Top-Tier Journal</div>
+          <div class="pub-card__badge">Elsevier Journal</div>
           <h3 class="pub-card__title">Target Based Offensive Language Detection in Hinglish</h3>
           <p class="pub-card__venue">Expert Systems with Applications, Volume 308, May 2026</p>
           <p class="pub-card__authors">Eishaan Khatri • Dr. Santosh K. Mishra</p>
           <ul class="pub-card__highlights">
-            <li>Constructed and released a <strong>6,800-instance Hinglish offensive language dataset</strong></li>
-            <li>Proposed <strong>novel token-level annotation framework</strong> for code-mixed languages</li>
+            <li>Constructed and released a <strong>6,800+ instance Hinglish offensive language dataset</strong></li>
+            <li>Designed a <strong>span/target-level annotation framework</strong> for code-mixed language analysis</li>
             <li>Achieved high accuracy across pre-trained multilingual models (mBERT, XLM-R, MuRIL)</li>
             <li>Addresses data scarcity in low-resource, code-mixed language processing</li>
           </ul>
@@ -414,7 +414,7 @@
           <ul class="pub-card__highlights">
             <li>Engineered neuro-symbolic pipeline integrating <strong>Dense Retrieval and Knowledge Graph Grounding</strong></li>
             <li>Achieved <strong>68% reduction in hallucinations</strong> for Physics/Materials Science tasks</li>
-            <li>Introduced novel <strong>fairness-oriented validation metrics (FC-PS)</strong></li>
+            <li>Explored <strong>fairness-oriented validation metrics (FC-PS)</strong></li>
             <li>Democratizes AI access by optimizing free-tier LLMs for researchers with limited compute</li>
           </ul>
           <div class="pub-card__tags">
@@ -453,12 +453,42 @@
       <!-- Projects Grid -->
       <div class="projects__grid" id="projectsGrid">
 
+        <!-- Robust ML Evidence -->
+        <article class="project-card" data-category="cv" data-animate="zoom-in">
+          <div class="project-card__icon">CV</div>
+          <div class="project-card__status status--complete">Evidence</div>
+          <h3 class="project-card__title">Source-Preserved Test-Time Adaptation</h3>
+          <p class="project-card__desc">Reproducible CIFAR-10-C robustness study comparing source-only, BN Adapt, Tent, UG-Tent, and source-mix variants. Source Mix Tent 0.75 reached 82.64% mean accuracy and reduced negative-transfer cases from 5 to 3.</p>
+          <div class="project-card__tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">TTA</span>
+            <span class="tag">CIFAR-10-C</span>
+            <span class="tag">Robustness</span>
+          </div>
+          <a href="job_shortlisting_system/TTA_Study_Summary.md" target="_blank" rel="noopener" class="project-card__link">Read study →</a>
+        </article>
+
+        <!-- CLIP Robustness Evidence -->
+        <article class="project-card" data-category="cv" data-animate="zoom-in">
+          <div class="project-card__icon">VLM</div>
+          <div class="project-card__status status--complete">Evidence</div>
+          <h3 class="project-card__title">CLIP Robustness Under Shift</h3>
+          <p class="project-card__desc">Zero-shot CLIP ViT-B/32 evaluation on CIFAR-10-C, CIFAR-100-C, and EuroSAT. The study tracks accuracy collapse, calibration error, confidence gap, entropy, and feature drift under corruption and domain shift.</p>
+          <div class="project-card__tags">
+            <span class="tag">CLIP</span>
+            <span class="tag">VLMs</span>
+            <span class="tag">ECE</span>
+            <span class="tag">Feature Drift</span>
+          </div>
+          <a href="job_shortlisting_system/CLIP_Robustness_Summary.md" target="_blank" rel="noopener" class="project-card__link">Read study →</a>
+        </article>
+
         <!-- 1. OpenEnv -->
         <article class="project-card" data-category="ai-agents" data-animate="zoom-in">
           <div class="project-card__icon">🧪</div>
           <div class="project-card__status status--flagship">★ Flagship</div>
           <h3 class="project-card__title">OpenEnv — SQL Migration Agent Benchmark</h3>
-          <p class="project-card__desc">Production-grade adversarial evaluation suite for Database Engineering AI Agents. Dynamic golden-database grading, live Mermaid ERDs, and 8 extreme SQLite migration tasks.</p>
+          <p class="project-card__desc">Adversarial evaluation suite for database-engineering AI agents with golden-database grading, live Mermaid ERDs, and 8 SQLite migration tasks.</p>
           <div class="project-card__tags">
             <span class="tag">Python</span>
             <span class="tag">AI Agents</span>
@@ -545,7 +575,7 @@
           <div class="project-card__icon">📈</div>
           <div class="project-card__status status--complete">Completed</div>
           <h3 class="project-card__title">Reliance Stock Price Forecasting</h3>
-          <p class="project-card__desc">Gradient boosting regression on NIFTY 50 data achieving R² = 0.9998 and MAE = 3.48. 10+ engineered features including SMAs, RSI, log-returns, rolling volatility.</p>
+          <p class="project-card__desc">Time-series forecasting study on NIFTY 50 data with gradient boosting, leakage-aware feature engineering checks, and 10+ market features including SMAs, RSI, log-returns, and rolling volatility.</p>
           <div class="project-card__tags">
             <span class="tag">Python</span>
             <span class="tag">R</span>
@@ -826,7 +856,7 @@
         <div class="trophy-card" data-animate="fade-up">
           <div class="trophy-card__icon">📄</div>
           <h3 class="trophy-card__title">Published Researcher</h3>
-          <p class="trophy-card__desc">Top-tier Elsevier journal (Expert Systems with Applications) + CASML 2025 Conference</p>
+          <p class="trophy-card__desc">Expert Systems with Applications journal publication + CASML 2025 conference work</p>
         </div>
         <div class="trophy-card" data-animate="fade-up">
           <div class="trophy-card__icon">🏆</div>
@@ -896,7 +926,8 @@
 
         <!-- GitHub Contribution Heatmap (#8) -->
         <div class="github__heatmap-section" data-animate="fade-up">
-          <h3 class="learning-title">📊 Contribution Activity</h3>
+          <h3 class="learning-title">Illustrative Activity Map</h3>
+          <p class="heatmap-note">This visual is a static portfolio illustration, not live GitHub contribution data.</p>
           <div class="github-heatmap" id="githubHeatmap">
             <!-- Generated by JS -->
           </div>
@@ -964,11 +995,36 @@
         </a>
       </div>
 
-      <!-- Resume Download CTA (#1) -->
-      <div class="contact__resume" data-animate="fade-up">
-        <a href="Eishaan_Khatri_Resume.pdf" target="_blank" rel="noopener" class="btn btn--resume btn--lg">
-          <span>📄 Download My Resume</span>
-        </a>
+      <!-- Role-specific resume hub -->
+      <div class="contact__resume resume-hub" id="resume" data-animate="fade-up">
+        <p class="resume-hub__eyebrow">Resume by role</p>
+        <h3 class="resume-hub__title">Choose the version that matches the opportunity</h3>
+        <div class="resume-hub__grid">
+          <a href="CV_Eishaan_Khatri_Research.pdf" target="_blank" rel="noopener" class="resume-hub__card">
+            <span class="resume-hub__label">NLP / LLM Research</span>
+            <span class="resume-hub__meta">Hinglish ESWA, transformers, low-resource NLP</span>
+          </a>
+          <a href="IISc_IACV_RA_Application/Eishaan_Khatri_IACV_RA_CV_STANDARD_FULLPAGE.pdf" target="_blank" rel="noopener" class="resume-hub__card">
+            <span class="resume-hub__label">CV / Robust ML</span>
+            <span class="resume-hub__meta">TTA, CLIP robustness, Edge-VCA, PyTorch</span>
+          </a>
+          <a href="Eishaan_Khatri_Resume.pdf" target="_blank" rel="noopener" class="resume-hub__card">
+            <span class="resume-hub__label">Data / Analytics</span>
+            <span class="resume-hub__meta">Forecasting, anomaly detection, XAI, dashboards</span>
+          </a>
+          <a href="Eishaan_Khatri_IrrationalLabs.pdf" target="_blank" rel="noopener" class="resume-hub__card">
+            <span class="resume-hub__label">Behavioral AI</span>
+            <span class="resume-hub__meta">Trust calibration, AI adoption, product research</span>
+          </a>
+        </div>
+        <div class="resume-hub__proof">
+          <a href="job_shortlisting_system/00_Master_Evidence_Bank.md" target="_blank" rel="noopener">Evidence bank</a>
+          <a href="https://authors.elsevier.com/c/1mQDW3PiGTXOl6" target="_blank" rel="noopener">Hinglish ESWA</a>
+          <a href="job_shortlisting_system/TTA_Study_Summary.md" target="_blank" rel="noopener">TTA study</a>
+          <a href="job_shortlisting_system/CLIP_Robustness_Summary.md" target="_blank" rel="noopener">CLIP robustness</a>
+          <a href="IISc_IACV_RA_Application/project_audit_for_iacv.md" target="_blank" rel="noopener">Claim audit</a>
+          <a href="job_shortlisting_system/shortlisting_graph.html" target="_blank" rel="noopener">Profile graph</a>
+        </div>
       </div>
     </div>
     <footer class="footer">
